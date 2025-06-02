@@ -99,3 +99,61 @@ fig.update_layout(
     yaxis_title="Liczba osób",
 )
 st.plotly_chart(fig)
+
+
+# selectbox z wyświetleniem clustra oraz opisu
+name_to_id = {v["name"]: k for k, v in cluster_names_and_descriptions.items()}
+
+st.header("Czy chcesz zobaczyć jakie są inne grupy oraz wykresy do nich?" )
+selected_name = st.selectbox("Wybierz grupę, którą chcesz zobaczyć:", list(name_to_id.keys()))
+
+cluster_id = name_to_id[selected_name]
+description = cluster_names_and_descriptions[cluster_id]["description"]
+
+st.subheader(f"{selected_name}")
+st.markdown(description)
+
+
+# robimy wykresy na podstawie clustra wybranego w selectbox
+filtered_df = all_df[all_df["Cluster"] == cluster_id]
+
+st.header("Osoby z grupy")
+fig = px.histogram(filtered_df.sort_values("age"), x="age")
+fig.update_layout(
+    title="Rozkład wieku w grupie",
+    xaxis_title="Wiek",
+    yaxis_title="Liczba osób",
+)
+st.plotly_chart(fig)
+
+fig = px.histogram(filtered_df, x="edu_level")
+fig.update_layout(
+    title="Rozkład wykształcenia w grupie",
+    xaxis_title="Wykształcenie",
+    yaxis_title="Liczba osób",
+)
+st.plotly_chart(fig)
+
+fig = px.histogram(filtered_df, x="fav_animals")
+fig.update_layout(
+    title="Rozkład ulubionych zwierząt w grupie",
+    xaxis_title="Ulubione zwierzęta",
+    yaxis_title="Liczba osób",
+)
+st.plotly_chart(fig)
+
+fig = px.histogram(filtered_df, x="fav_place")
+fig.update_layout(
+    title="Rozkład ulubionych miejsc w grupie",
+    xaxis_title="Ulubione miejsce",
+    yaxis_title="Liczba osób",
+)
+st.plotly_chart(fig)
+
+fig = px.histogram(filtered_df, x="gender")
+fig.update_layout(
+    title="Rozkład płci w grupie",
+    xaxis_title="Płeć",
+    yaxis_title="Liczba osób",
+)
+st.plotly_chart(fig)
