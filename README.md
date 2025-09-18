@@ -9,11 +9,11 @@ charakterystykę.
 
 ## 🛠️ Technologie
 
--   🐍 **Python**\
--   📊 **Streamlit** -- interfejs webowy\
--   🤖 **PyCaret** -- model uczenia maszynowego (klasteryzacja)\
--   📈 **Plotly Express** -- interaktywne wykresy\
--   📄 **Pandas** -- przetwarzanie danych
+-   🐍 **Python**
+-   📊 **Streamlit** - interfejs webowy
+-   🤖 **PyCaret** - model uczenia maszynowego (klasteryzacja)
+-   📈 **Plotly Express** - interaktywne wykresy
+-   📄 **Pandas** - przetwarzanie danych
 
 ------------------------------------------------------------------------
 
