@@ -1,81 +1,74 @@
 # 🎯 Friend Seeker
 
-**Friend Seeker** 🚀 to aplikacja stworzona w **Streamlit**, która
-pomaga znaleźć osoby o podobnych zainteresowaniach 👥. Na podstawie
-krótkiej ankiety dopasowuje Cię do odpowiedniej grupy i pokazuje jej
-charakterystykę.
+**Friend Seeker** 🚀 is an application built with **Streamlit** that helps you find people with similar interests 👥. Based on a short survey, it matches you to the right group and shows you its characteristics.
 
 ------------------------------------------------------------------------
 
-## 🛠️ Technologie
+## 🛠️ Technologies
 
 -   🐍 **Python**
--   📊 **Streamlit** - interfejs webowy
--   🤖 **PyCaret** - model uczenia maszynowego (klasteryzacja)
--   📈 **Plotly Express** - interaktywne wykresy
--   📄 **Pandas** - przetwarzanie danych
+-   📊 **Streamlit** - web interface
+-   🤖 **PyCaret** - machine learning model (clustering)
+-   📈 **Plotly Express** - interactive charts
+-   📄 **Pandas** - data processing
 
 ------------------------------------------------------------------------
 
-## 🔍 Jak to działa?
+## 🔍 How it works?
 
-1.  📝 **Wypełniasz krótką ankietę** w panelu bocznym (wiek,
-    wykształcenie, ulubione miejsca, zwierzęta, płeć).\
-2.  🤖 **Model ML** przewiduje, do którego klastra (grupy) należysz.\
-3.  📊 **Otrzymujesz opis swojej grupy** + interaktywne wykresy
-    pokazujące jej skład.\
-4.  🔄 **Możesz też przejrzeć inne grupy** i zobaczyć ich
-    charakterystykę.
+1.  📝 **Fill out a short survey** in the sidebar (age, education, favorite places, pets, gender).  
+2.  🤖 The **ML model** predicts which cluster (group) you belong to.  
+3.  📊 **You receive a description of your group** + interactive charts showing its composition.  
+4.  🔄 **You can also browse other groups** and see their characteristics.
 
 ------------------------------------------------------------------------
 
-## 📊 Przykładowe wizualizacje
+## 📊 Example visualizations
 
--   👶👩👴 Rozkład wieku w grupie\
--   🎓 Poziom wykształcenia\
--   🐶🐱 Ulubione zwierzęta\
--   🌲🏞️🏖️ Ulubione miejsca\
--   🚹🚺 Rozkład płci
+-   👶👩👴 Age distribution in the group  
+-   🎓 Education level  
+-   🐶🐱 Favorite pets  
+-   🌲🏞️🏖️ Favorite places  
+-   🚹🚺 Gender distribution  
 
 ------------------------------------------------------------------------
 
-## 🚀 Uruchomienie
+## 🚀 Running the app
 
-1.  Zainstaluj wymagane biblioteki:
+1.  Install the required libraries:
 
     ``` bash
     pip install -r requirements.txt
     ```
 
-2.  Uruchom aplikację:
+2.  Run the application:
 
     ``` bash
     streamlit run app.py
     ```
 
-3.  Otwórz w przeglądarce adres 👉 <http://localhost:8501>
+3.  Open in your browser 👉 <http://localhost:8501>
 
 ------------------------------------------------------------------------
 
-## 📂 Struktura projektu
+## 📂 Project structure
 
     .
-    ├── app.py                                # Kod aplikacji Streamlit
-    ├── welcome_survey_simple_v2.csv          # Dane wejściowe
-    ├── welcome_survey_clustering_pipeline_v2 # Wytrenowany model ML
-    ├── welcome_survey_cluster_names_and_descriptions_v2.json # Opisy klastrów
-    └── README.md                             # Dokumentacja
+    ├── app.py                                # Streamlit app code
+    ├── welcome_survey_simple_v2.csv          # Input data
+    ├── welcome_survey_clustering_pipeline_v2 # Trained ML model
+    ├── welcome_survey_cluster_names_and_descriptions_v2.json # Cluster descriptions
+    └── README.md                             # Documentation
 
 ------------------------------------------------------------------------
 
-## 🎉 Funkcje aplikacji
+## 🎉 App features
 
--   ✅ Dopasowanie do grupy na podstawie krótkiego formularza\
--   ✅ Wyświetlenie opisu grupy i jej charakterystyki\
--   ✅ Interaktywne wykresy 📊\
--   ✅ Możliwość porównania różnych grup
+-   ✅ Match to a group based on a short form  
+-   ✅ View a description of the group and its characteristics  
+-   ✅ Interactive charts 📊  
+-   ✅ Compare different groups  
 
 ------------------------------------------------------------------------
 
-💡 **Friend Seeker** pomaga odkryć, do której społeczności pasujesz
-najbardziej i znaleźć osoby o podobnych zainteresowaniach!
+💡 **Friend Seeker** helps you discover which community fits you best and connect with people who share your interests!
