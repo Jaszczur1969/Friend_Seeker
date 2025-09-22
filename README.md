@@ -1,4 +1,4 @@
-# 🎯 Friend Seeker
+# 🤝 Friend Seeker
 
 **Friend Seeker** 🚀 is an application built with **Streamlit** that helps you find people with similar interests 👥. Based on a short survey, it matches you to the right group and shows you its characteristics.
 
