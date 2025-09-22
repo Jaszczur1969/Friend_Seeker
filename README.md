@@ -19,17 +19,7 @@
 1.  📝 **Fill out a short survey** in the sidebar (age, education, favorite places, pets, gender).  
 2.  🤖 The **ML model** predicts which cluster (group) you belong to.  
 3.  📊 **You receive a description of your group** + interactive charts showing its composition.  
-4.  🔄 **You can also browse other groups** and see their characteristics.
-
-------------------------------------------------------------------------
-
-## 📊 Example visualizations
-
--   👶👩👴 Age distribution in the group  
--   🎓 Education level  
--   🐶🐱 Favorite pets  
--   🌲🏞️🏖️ Favorite places  
--   🚹🚺 Gender distribution  
+4.  🔄 **You can also browse other groups** and see their characteristics. 
 
 ------------------------------------------------------------------------
 
